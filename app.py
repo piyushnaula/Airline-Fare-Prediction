@@ -124,4 +124,16 @@ except AttributeError:
 st.markdown("#### Predict Fare")
 if st.button('Predict'):
     prediction = model.predict(input_final)
-    st.success(f"Estimated Flight Fare: ₹{prediction[0]:,.2f}")
+    st.success(f"Estimated Flight Fare: ₹{prediction[0]:,.2f}") 
+
+# Footer
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; font-size: 14px; margin-top: 30px;'>
+        Developed by <b>Piyush Naula</b>, <b>Mojahid Ansari</b>, and <b>Lalit Palariya</b><br>
+        © 2025 Flight Fare Prediction Project
+    </div>
+    """,
+    unsafe_allow_html=True
+)
